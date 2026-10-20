@@ -1,0 +1,182 @@
+@import "../../../../styles/variables.css";
+
+
+/* Reseteo base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================
+   SECCIÓN SOBRE NOSOTROS
+   ========================================= */
+.sobre-nosotros-seccion {
+  position: relative;
+  overflow: hidden; /* Evita scroll horizontal por los copos */
+  width: 100%;
+  background-color: var(--color-fondo-secundario);
+  padding: 96px 24px;
+}
+
+/* =========================================
+   COPOS DECORATIVOS EN LAS ESQUINAS
+   ========================================= */
+.decoracion-copo {
+  position: absolute;
+  pointer-events: none; /* No bloquea clics ni selecciones */
+  user-select: none;
+  z-index: 1;
+  opacity: 0.3;
+  filter: drop-shadow(0 4px 12px rgba(100, 180, 246, 0.15));
+}
+
+/* Extremo superior izquierdo */
+.copo-top-left {
+  top: -0px;
+  left: -40px;
+  width: 240px;
+  animation: flotarCopoIzq 7s ease-in-out infinite alternate;
+}
+
+
+@keyframes flotarCopoIzq {
+  0% {
+    transform: translateY(0px) rotate(-15deg);
+  }
+  100% {
+    transform: translateY(14px) rotate(-8deg);
+  }
+}
+
+@keyframes flotarCopoDer {
+  0% {
+    transform: translateY(0px) rotate(20deg);
+  }
+  100% {
+    transform: translateY(-16px) rotate(26deg);
+  }
+}
+
+/* =========================================
+   CONTENEDOR Y COLUMNAS
+   ========================================= */
+.sobre-nosotros-contenedor {
+  position: relative;
+  z-index: 2; /* Siempre visible por encima de los copos */
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+/* Columna de texto */
+.col-der-sobre {
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.titulo-sobre-nosotros {
+  font-family: var(--fuente-display);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: normal;
+  line-height: 1.15;
+  color: var(--color-primario);
+  margin: 0;
+}
+
+.texto-sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.texto-sobre p {
+  color: var(--color-texto);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.descripcion {
+  color: var(--color-titulos);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-left: 3px solid var(--color-primario);
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Columna de imagen */
+.col-izq-sobre {
+  grid-column: span 5;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-imagen {
+  width: 100%;
+  aspect-ratio: 4 / 4.5;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 16px 36px -12px rgba(28, 46, 51, 0.18);
+}
+
+.imagen-estudio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.contenedor-imagen:hover .imagen-estudio {
+  transform: scale(1.04);
+}
+
+/* =========================================
+   ADAPTACIÓN RESPONSIVE
+   ========================================= */
+@media (max-width: 900px) {
+  .sobre-nosotros-seccion {
+    padding: 64px 20px;
+  }
+
+  .sobre-nosotros-contenedor {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .col-der-sobre,
+  .col-izq-sobre {
+    grid-column: span 1;
+  }
+
+  .contenedor-imagen {
+    aspect-ratio: 4 / 3;
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .copo-top-left {
+    width: 150px;
+    top: -25px;
+    left: -25px;
+    opacity: 0.35;
+  }
+
+  .copo-bottom-right {
+    width: 170px;
+    bottom: -30px;
+    right: -25px;
+    opacity: 0.35;
+  }
+}

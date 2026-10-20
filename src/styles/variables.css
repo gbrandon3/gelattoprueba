@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+  --color-fondo: #fff6ee;
+  /* fdddbd */
+  --color-fondo-secundario: #FDEEF2;
+  --color-primario: #e82a61;
+  --color-texto: #1c2e33;
+
+  --color-titulos: #e82a61;
+  --color-secundario: #3A2312;
+  
+  --fuente-moderna: system-ui, -apple-system, sans-serif;
+  font-family: var(--fuente-moderna);
+
+
+
+  --fuente-display: "Lobster", cursive;
+
+
+  /* Variables optimizadas automáticamente */
+  --color-fondo-secundario-2: #1f2937;
+  --color-catalogo-header: #ffffff;
+  --color-catalogo-header-2: #fef3c7;
+  --fondo-catalogo-item: rgba(255, 255, 255, 0.05);
+  --borde-catalogo-item: rgba(255, 255, 255, 0.1);
+  --color-precio-label: #94a3b8;
+  --color-boton-catalogo: #0d1117;
+  --fondo-contacto-insignia: rgba(214, 162, 132, 0.15);
+  --borde-tarjeta-formulario-contacto: rgba(0, 0, 0, 0.08);
+  --sombra-tarjeta-formulario-contacto: rgba(0, 0, 0, 0.04);
+  --borde-tarjeta-formulario-contacto-2: rgba(255, 255, 255, 0.14);
+  --borde-campo-grupo: #cbd5e1;
+  --color-campo-grupo: #111827;
+  --sombra-campo-grupo: rgba(214, 162, 132, 0.25);
+  --sombra-boton-enviar-contacto: rgba(0, 0, 0, 0.15);
+  --sombra-tarjeta-info-item: rgba(0, 0, 0, 0.1);
+  --borde-tarjeta-info-item: rgba(255, 255, 255, 0.12);
+  --fondo-icono-info: rgba(214, 162, 132, 0.18);
+  --fondo-banner-whatsapp: #f0fdf4;
+  --borde-banner-whatsapp: #bbf7d0;
+  --fondo-banner-whatsapp-2: rgba(34, 197, 94, 0.12);
+  --borde-banner-whatsapp-2: rgba(34, 197, 94, 0.25);
+  --color-banner-whatsapp-info: #166534;
+  --color-banner-whatsapp-info-2: #86efac;
+  --color-banner-whatsapp-info-3: #15803d;
+  --fondo-boton-whatsapp: #25d366;
+  --borde-boton-telefono: rgba(0, 0, 0, 0.12);
+  --sombra-boton-telefono: rgba(0, 0, 0, 0.06);
+  --fondo-boton-telefono: rgba(255, 255, 255, 0.15);
+  --borde-boton-telefono-2: rgba(255, 255, 255, 0.3);
+  --color-footer-desc: #64748b;
+  --fondo-navbar: rgba(0, 0, 0, 0);
+  --fondo-navbar-2: rgba(0, 0, 0, 0.35);
+  --fondo-navbar-3: rgba(0, 0, 0, 0.8);
+  --fondo-navbar-scrolled: #0f172a;
+  --color-nav-link: rgba(255, 255, 255, 0.9);
+  --sombra-nav-link-btn: rgba(0, 0, 0, 0.2);
+  --sombra-navbar-menu: rgba(0, 0, 0, 0.5);
+  --sombra-contenedor-imagen: rgba(0, 0, 0, 0.05);
+  --fondo-pagina-catalogo-cuerpo: #fff1e5;
+  --sombra-scrolled: rgba(0, 0, 0, 0.25);
+  --borde-scrolled: rgba(45, 42, 38, 0.12);
+  --color-navbar-scrolled: ;
+  --color-barra-navegacion: #d6a284;
+  --fondo-card-badge-flotante: rgba(32, 51, 53, 0.85);
+  --borde-card-badge-flotante: rgba(214, 162, 132, 0.3);
+  --fondo-card-capa-hover: rgba(32, 51, 53, 0.8);
+  --fondo-card-capa-hover-2: rgba(15, 23, 42, 0.95);
+  --borde-card-modern-pill: rgba(45, 42, 38, 0.1);
+  --sombra-card-modern-pill: rgba(45, 42, 38, 0.07);
+  --fondo-card-img-box: #eae5dc;
+  --sombra-pastilla-precio: #d6a28430;
+  --sombra-boton-pill-full: #d6a28435;
+  --sombra-boton-pill-full-2: #d6a28450;
+  --fondo-modal-detalle-backdrop: rgba(15, 23, 42, 0.72);
+  --fondo-modal-detalle-dialog: rgba(140, 140, 140, 0.35);
+  --fondo-btn-cerrar-modal: rgba(255, 255, 255, 0.2);
+  --sombra-modal-detalle-pedestal: rgba(0, 0, 0, 0.03);
+  --fondo-modal-detalle-imagen-marco: #f1f5f9;
+  --fondo-modal-producto-badge-flotante: rgba(255, 255, 255, 0.94);
+  --borde-modal-producto-badge-flotante: rgba(255, 255, 255, 0.8);
+  --fondo-punto-estado-activo: #22c55e;
+  --sombra-punto-estado-activo: rgba(34, 197, 94, 0.3);
+  --fondo-modal-detalle-eyebrow: rgba(154, 116, 50, 0.08);
+  --borde-modal-detalle-eyebrow: rgba(154, 116, 50, 0.15);
+  --fondo-modal-detalle-eyebrow-2: rgba(2, 132, 199, 0.08);
+  --borde-modal-detalle-eyebrow-2: rgba(2, 132, 199, 0.2);
+  --fondo-modal-detalle-eyebrow-3: rgba(212, 175, 55, 0.12);
+  --borde-modal-detalle-eyebrow-3: rgba(212, 175, 55, 0.3);
+  --color-modal-detalle-eyebrow: #d4af37;
+  --fondo-btn-pedir-whatsapp-lujo: #128c7e;
+  --fondo-btn-pedir-whatsapp-lujo-2: #1fa855;
+  --sombra-btn-pedir-whatsapp-lujo: rgba(18, 140, 126, 0.38);
+  --sombra-btn-pedir-whatsapp-lujo-2: rgba(18, 140, 126, 0.55);
+  --fondo-btn-pedir-whatsapp-lujo-3: #159b8c;
+  --fondo-btn-pedir-whatsapp-lujo-4: #22b65c;
+  --fondo-btn-whatsapp-icono-wrap: rgba(255, 255, 255, 0.18);
+  --color-btn-whatsapp-subtexto: rgba(255, 255, 255, 0.85);
+  --fondo-indicador-pulso-verde: #a7f3d0;
+  --sombra-indicador-pulso-verde: rgba(255, 255, 255, 0.25);
+  --sombra-btn-contacto-rapido: rgba(37, 211, 102, 0.3);
+  --fondo-btn-contacto-rapido: #1eb956;
+  --color-separador: rgba(255, 255, 255, 0.5);
+  --fondo-detalle-producto-badge-flotante: rgba(255, 255, 255, 0.95);
+  --borde-detalle-eyebrow: rgba(2, 132, 199, 0.15);
+  --color-detalle-precio: #16a34a;
+  --sombra-punto-verde-pulso: rgba(34, 197, 94, 0.7);
+  --sombra-detalle-producto-70: rgba(34, 197, 94, 0);
+  --sombra-activo: rgba(2, 132, 199, 0.25);
+  --color-detalle-badge-tech: #0284c7;
+  --fondo-detalle-badge-tech: #f0f9ff;
+  --borde-detalle-badge-tech: #bae6fd;
+  --color-badge-envio-gratis: #047857;
+  --fondo-badge-envio-gratis: #ecfdf5;
+  --color-badge-pago-seguro: #1d4ed8;
+  --fondo-badge-pago-seguro: #eff6ff;
+  --borde-badge-pago-seguro: #bfdbfe;
+  --sombra-btn-pedir-whatsapp-moderno: rgba(37, 211, 102, 0.4);
+  --sombra-btn-pedir-whatsapp-moderno-2: rgba(37, 211, 102, 0.55);
+  --fondo-detalle-promo-banner: #fee2e2;
+  --borde-detalle-promo-banner: #fecaca;
+  --color-detalle-promo-banner: #991b1b;
+  --sombra-detalle-imagen-showroom: rgba(0, 0, 0, 0.07);
+  --color-detalle-badge-rating: #1e293b;
+  --color-estrellas-doradas: #f59e0b;
+  --fondo-detalle-badge-disponibilidad-3: rgba(15, 23, 42, 0.85);
+  --color-detalle-tag-promo: #92400e;
+  --borde-detalle-tag-promo: #fde68a;
+  --fondo-badge-ahorro-catalogo: #dcfce7;
+  --color-beneficios-lista: #14532d;
+  --sombra-btn-whatsapp-showroom: rgba(37, 211, 102, 0.45);
+}
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+a {
+  font-family: var(--fuente-moderna);
+}
+p {
+  font-family: var(--fuente-moderna);
+}
+.cursiva {
+  font-style: italic;
+}
+.display {
+  font-family: var(--fuente-display);
+}
+.moderna {
+  font-family: var(--fuente-moderna);
+}
+.elegante {
+  font-family: Georgia, serif;
+}
+.centrar-items {
+  align-items: center;
+}
+.boton {
+  padding: 18px 32px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+  flex: 1;
+}
+.boton-secundario {
+  background-color: var(--color-secundario);
+  color: white;
+}
+
+.boton-blanco {
+  border: 1px solid white;
+  color: white;
+}
+.contenedor-seccion {
+  max-width: 1280px;
+  margin: auto;
+}
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+.col-span-5 {
+  grid-column: span 5;
+}
+.col-span-7 {
+  grid-column: span 7;
+}
+.text-secundario {
+  color: var(--color-secundario);
+}
+.fuente-elegante {
+  font-family: var(--fuente-elegante);
+}
+.fondo-principal {
+  color: #3E4C50;
+  background-color: var(--color-fondo);
+}
+.fondo-secundario {
+  color: #3E4C50;
+  background-color: var(--color-fondo-secundario);
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+/*  */

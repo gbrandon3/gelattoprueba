@@ -1,0 +1,12 @@
+{
+  "nombre": "Document",
+  "telefono": "+573001234567",
+  "whatsapp": "525512345678",
+  "email": "gelatto@gmail.com",
+  "direccion": "Av. Principal #123, Ciudad Escolar",
+  "horario": "Lunes a Viernes: 9:00 AM - 7:00 PM",
+  "redesSociales": {
+    "instagram": "@tiendaescolar",
+    "facebook": "facebook.com/tiendaescolar"
+  }
+}

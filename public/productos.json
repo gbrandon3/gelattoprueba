@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Vasos Cool",
+    "imagen": "./imagenes/helado 1.webp",
+    "precio":"$30.000",
+    "descripcion": "Vasos de helados tradicionales con mucho sabor natural y que no te dejara de gustar"
+  },
+  {
+    "nombre": "Paletas mundo green",
+    "imagen": "./imagenes/helado2.jpg",
+    "precio":"$25.000", 
+    "descripcion": "Son unas deliciosas paletas de kiwi bañadas en chocolate oscuro con kipitos en la punta lo que te da una experiencia sobrenatural"
+  },
+  {
+    "nombre": "Banaexplit de la casa",
+    "imagen": "./imagenes/helado3.jpg",
+    "precio":"$35.000",
+    "descripcion": "Es un producto unico en el mundo con el cual pasaras unos momentos inolvidables que jamas olvidaras porque son hechos con los helados y frutas de la mejor calidad"
+  }
+]

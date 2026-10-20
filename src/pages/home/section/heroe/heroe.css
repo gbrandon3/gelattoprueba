@@ -1,0 +1,108 @@
+@import "../../../../styles/variables.css";
+
+
+
+
+.heroe-seccion {
+  background-color: var(--color-fondo);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.heroe-contenedor {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.heroe-texto {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px; /* Espaciado más compacto y armónico */
+}
+
+.heroe-titulo {
+  font-family: var(--fuente-display) !important;
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  line-height: 1.15;
+  color: var(--color-primario);
+  margin: 0;
+  font-weight: normal;
+}
+
+.heroe-texto p {
+  margin: 0;
+  color: var(--color-texto);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 440px;
+}
+
+.heroe-imagen-contenedor {
+  grid-column: span 7;
+  display: flex;
+  justify-content: center;
+}
+
+.heroe-imagen {
+  width: 100%;
+  max-height: 520px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px; /* Bordes suaves que armonizan con el estilo artesanal */
+  box-shadow: 0 20px 40px -15px rgba(28, 46, 51, 0.15); /* Sombra elegante */
+}
+
+/* Botones */
+.boton {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 9999px; /* Botón píldora */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.boton-secundario {
+  background-color: var(--color-secundario);
+  color: #FFFFFF; /* Blanco para contraste total sobre naranja */
+  box-shadow: 0 6px 16px -4px rgba(200, 141, 88, 0.4);
+}
+
+.boton-secundario:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 10px 20px -4px rgba(200, 141, 88, 0.5);
+}
+
+/* Responsividad para tablet / móvil */
+@media (max-width: 900px) {
+  .heroe-contenedor {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 32px 20px;
+  }
+
+  .heroe-texto {
+    grid-column: span 1;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroe-imagen-contenedor {
+    grid-column: span 1;
+  }
+}

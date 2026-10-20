@@ -1,0 +1,249 @@
+@import "../../../../styles/variables.css";
+
+
+/* Reseteo y contenedor general */
+.seccion-contacto,
+#contacto {
+  padding: 6rem 1.5rem;
+  background-color: var(--color-fondo-secundario, #FDEEF2);
+  font-family: var(--fuente-moderna, system-ui, -apple-system, sans-serif);
+  box-sizing: border-box;
+}
+
+.seccion-contacto *,
+.seccion-contacto *::before,
+.seccion-contacto *::after {
+  box-sizing: border-box;
+}
+
+.contenedor-seccion {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   CABECERA FORMAL Y PROFESIONAL
+   ========================================= */
+.contacto-cabecera {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto-insignia {
+  display: inline-block;
+  font-family: var(--fuente-moderna, system-ui, -apple-system, sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primario, #E22D65);
+  background-color: rgba(226, 45, 101, 0.1);
+  padding: 0.4rem 1.1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.contacto-titulo {
+  font-family: var(--fuente-moderna, system-ui, -apple-system, sans-serif);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-titulos, #1C2E33);
+  margin: 0 0 0.85rem 0;
+}
+
+.contacto-bajada {
+  font-family: var(--fuente-moderna, system-ui, -apple-system, sans-serif);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-texto, #3E4C50);
+  margin: 0;
+}
+
+/* =========================================
+   LAYOUT DE 2 COLUMNAS
+   ========================================= */
+.cuadricula-contacto-2col {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (max-width: 880px) {
+  .cuadricula-contacto-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   COLUMNA IZQUIERDA: TARJETAS DE CONTACTO
+   ========================================= */
+.columna-informacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.lista-tarjetas-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tarjeta-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(28, 46, 51, 0.08);
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 20px -6px rgba(28, 46, 51, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tarjeta-info-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(226, 45, 101, 0.35);
+  box-shadow: 0 12px 24px -6px rgba(226, 45, 101, 0.12);
+}
+
+.icono-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: rgba(226, 45, 101, 0.08);
+  color: var(--color-primario, #E22D65);
+  flex-shrink: 0;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.tarjeta-info-item:hover .icono-info {
+  background-color: var(--color-primario, #E22D65);
+  color: #FFFFFF;
+}
+
+.contenido-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.etiqueta-info {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8C9BA0;
+  margin-bottom: 2px;
+}
+
+.valor-info {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-titulos, #1C2E33);
+}
+
+/* =========================================
+   COLUMNA DERECHA: FORMULARIO
+   ========================================= */
+.tarjeta-formulario-contacto {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 1px solid rgba(28, 46, 51, 0.08);
+  box-shadow: 0 10px 30px -8px rgba(28, 46, 51, 0.07);
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.fila-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .fila-formulario {
+    grid-template-columns: 1fr;
+  }
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.campo-grupo label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-titulos, #1C2E33);
+}
+
+.campo-grupo input,
+.campo-grupo textarea {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 10px;
+  background-color: #FAFAFA;
+  color: var(--color-titulos, #1C2E33);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+  border-color: var(--color-primario, #E22D65);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(226, 45, 101, 0.12);
+}
+
+.campo-grupo textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* =========================================
+   BOTÓN DE ENVÍO
+   ========================================= */
+.boton-enviar-contacto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background-color: var(--color-primario, #E22D65);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 8px 18px -4px rgba(226, 45, 101, 0.35);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-enviar-contacto:hover {
+  background-color: var(--color-primario-hover, #C61E52);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px -4px rgba(226, 45, 101, 0.45);
+}

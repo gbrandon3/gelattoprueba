@@ -1,0 +1,23 @@
+[
+  {
+    "id": "vasos-cool-1",
+    "nombre": "Vasos Cool",
+    "imagen": "imagenes/helado 1.webp",
+    "precio": "$30.000",
+    "descripcion": "Vasos de helados tradicionales con mucho sabor natural y una cremosidad artesanal irresistible."
+  },
+  {
+    "id": "paletas-mundo-green-2",
+    "nombre": "Paletas mundo green",
+    "imagen": "imagenes/helado2.jpg",
+    "precio": "$25.000",
+    "descripcion": "Deliciosas paletas de kiwi natural bañadas en chocolate oscuro belga con un toque crujiente en la punta."
+  },
+  {
+    "id": "banana-split-de-la-casa-3",
+    "nombre": "Banana Split de la casa",
+    "imagen": "imagenes/helado3.jpg",
+    "precio": "$35.000",
+    "descripcion": "Preparación tradicional con banano fresco, tres bolas de gelato artesanal, crema chantilly y cereza."
+  }
+]

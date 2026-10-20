@@ -1,0 +1,149 @@
+@import "../../../../styles/variables.css";
+
+
+/* =========================================================
+   ESTILOS DEL PIE DE PÁGINA (FOOTER)
+   ========================================================= */
+
+.sitio-footer {
+  background-color: var(--color-fondo, #FBF6EE);
+  color: var(--color-texto, #3E4C50);
+  padding: 4.5rem 1.5rem 2rem;
+  font-family: var(--fuente-moderna, system-ui, -apple-system, sans-serif);
+  box-sizing: border-box;
+  border-top: 1px solid rgba(226, 45, 101, 0.12);
+}
+
+.sitio-footer *,
+.sitio-footer *::before,
+.sitio-footer *::after {
+  box-sizing: border-box;
+}
+
+.contenedor-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grilla principal equilibrada de 4 columnas */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.2fr 1.2fr;
+  gap: 3.5rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+/* Columna 1: Marca */
+.footer-brand {
+  font-family: var(--fuente-display, cursive);
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin: 0 0 0.85rem 0;
+  color: var(--color-primario, #E22D65);
+  line-height: 1;
+}
+
+.footer-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-texto, #3E4C50);
+  max-width: 320px;
+  margin: 0;
+}
+
+/* Títulos de las Columnas */
+.footer-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.25rem 0;
+  color: var(--color-titulos, #1C2E33);
+  position: relative;
+  display: inline-block;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-primario, #E22D65);
+  border-radius: 9999px;
+}
+
+/* Listas de Enlaces y Datos */
+.footer-links,
+.footer-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+/* Enlaces con transición */
+.footer-link {
+  color: var(--color-texto, #3E4C50);
+  text-decoration: none;
+  font-size: 0.95rem;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: var(--color-primario, #E22D65);
+  transform: translateX(3px);
+}
+
+/* Información de contacto y horarios */
+.footer-info li {
+  font-size: 0.95rem;
+  color: var(--color-texto, #3E4C50);
+  line-height: 1.5;
+}
+
+.footer-info li strong {
+  color: var(--color-titulos, #1C2E33);
+  font-weight: 500;
+}
+
+/* Línea divisoria y Copyright */
+.footer-bottom {
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(28, 46, 51, 0.08);
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--color-texto, #3E4C50);
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* =========================================================
+   RESPONSIVIDAD (TABLETS Y MÓVILES)
+   ========================================================= */
+
+@media (max-width: 960px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .sitio-footer {
+    padding: 3.5rem 1.25rem 1.75rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

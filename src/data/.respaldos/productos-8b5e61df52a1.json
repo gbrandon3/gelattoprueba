@@ -1,0 +1,44 @@
+[
+  {
+    "id": "vasos-cool-1",
+    "nombre": "Vasos Cool",
+    "imagen": "imagenes/helado 1.webp",
+    "precio": "$10.000",
+    "descripcion": "Vasos de helados tradicionales con mucho sabor natural y una cremosidad artesanal irresistible."
+  },
+  {
+    "id": "paletas-mundo-green-2",
+    "nombre": "Paletas mundo green",
+    "imagen": "imagenes/helado2.jpg",
+    "precio": "$8.000",
+    "descripcion": "Deliciosas paletas de kiwi natural bañadas en chocolate oscuro belga con un toque crujiente en la punta."
+  },
+  {
+    "id": "banana-split-de-la-casa-3",
+    "nombre": "Banana Split de la casa",
+    "imagen": "imagenes/helado3.jpg",
+    "precio": "$15.000",
+    "descripcion": "Preparación tradicional con banano fresco, tres bolas de gelato artesanal, crema chantilly y cereza."
+  },
+  {
+    "nombre": "GALLETAS DE HELADO MULTI SABOR",
+    "precio": "67000",
+    "descripcion": "UNA GALLETA LLENA DE AMOR CON MUCHOS SABORES QUE PUEDES ELEGUIR ",
+    "id": "galletas-de-helado-multi-sabor-1",
+    "imagen": "imagenes/galletas-de-helado-multi-sabor-1-9c601615.webp"
+  },
+  {
+    "nombre": "VASOS DE HELADO CASEROS",
+    "precio": "40000",
+    "descripcion": "PUEDEN SER DE TODOS LOS SABORES Y  PUEDES PEDIR PARA CELEBRACIONES AL POR MAYOR LOS NIÑOS LO AMAN Y LOS GRANDES NONLO PUEDEN OLVIDAR ",
+    "id": "vasos-de-helado-caseros-1",
+    "imagen": "imagenes/vasos-de-helado-caseros-1-e3acca2a.webp"
+  },
+  {
+    "nombre": "ENSALADA DE FRUTAS",
+    "precio": "DE 15000-70000",
+    "descripcion": "SON ENSALADAS CON TODAS LAS FRUTAS QUE DESES Y SIN IMPORTAR CUANTAS BOLAS DE ELADOS EXTRA QUIERES DES PUES DE COMPRAS MAYORES DE 50000 ",
+    "id": "ensalada-de-frutas-1",
+    "imagen": "imagenes/ensalada-de-frutas-1-dcda68a1.avif"
+  }
+]
